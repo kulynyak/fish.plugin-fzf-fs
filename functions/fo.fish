@@ -9,5 +9,5 @@ function fo
 	if test -n "$file" ;
       [ "$key" = ctrl-o ]; and open "$file"; or eval "$EDITOR" "$file"
     end
-	rm $fn
+	command rm $fn
 end

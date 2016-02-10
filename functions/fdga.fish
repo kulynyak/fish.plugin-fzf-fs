@@ -5,5 +5,5 @@ function fda
 	set -l fn "$TMPDIR/"(random)".fsf"
 	eval "find $target -type d 2> /dev/null | fzf +m > $fn"
 	set -l dir (cat $fn); and cd $dir
-	rm $fn
+	command rm $fn
 end

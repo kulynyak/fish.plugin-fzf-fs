@@ -5,5 +5,5 @@ function cdf
 	and set -l file (cat $fn | head -1)
 	and set -l dir (dirname "$file")
     and cd "$dir"
-	rm $fn
+	command rm $fn
 end
